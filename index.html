@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- bootstrap 3 -->
+<!-- bootstrap 5 -->
+ 
+<!--  bootstrap 5 Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- bootstrap 5 Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
  <title>Bootstrap Project</title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -64,23 +68,40 @@
 <!-- Intro -->
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio Bootstrap Project</h1>      
-    <p>Allow me to introduce myself, I am a self-proclaimed world traveler, pun-lover, solo mom, certified makeup artist, technophile, shutterbug, craft dabbler, and fitness fanatic; always seeking improvement. After over 7 years of experience in project management, administrative assistance, and operations I am challenging myself in new ways by becoming certified as a full-stack MERN developer with MIT xPro's women's cohort.
-       <br>I have many hats.</p>
+    <h1>About</h1>      
+    <p>I would like to add a bunch of pictures in a carousel here, afterall picture is worth a thousand words!</p>
   </div>
 </div>
-<!-- Containers for Portrait & video to keep centered-->
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-   <!-- Portrait-->
-<figure class="figure">
-  <img src="Self.PORTRAIT.jpg" class="figure-img img-fluid rounded" style="width: 20%" alt="AshlingImage">
-  <figcaption class="figure-caption text-end">It's me. Hi!</figcaption>
-  <br>
-</figure>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
-    <div class="col">
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ 
+     
    <!-- embbeded youtube video -->
    <div class- center>
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2IhVKhOhfcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
@@ -93,26 +114,6 @@
   </div>
 </div> 
 
-<!-- Projects -->
-<div class="d-flex flex-row mb-3 text-center">
-  <h3>Class Projects</h3>
-  <div class="row">
-        <div class="col-sm-4">
-          <div class="p-2">Eyes Excersise</div>
-          <img src="eyeballstickers.jpg" href= "https://ashlingnlog.github.io/eyes/" class="img-responsive" style="width:100%" alt="EyeBalls">
-        </div>
-        <div class="col-sm-4"> 
-          <div class="p-2">Real Time Bus</div>
-          <img src="demo.png" href="https://ashlingnlog.github.io/MapAnimation/" class="img-responsive" style="width:100%" alt="BusMap">
-        </div>
-        <div class="col-sm-4"> 
-          <div class="p-2">PacMen</div>
-          <img src="PACMAN.gif" href="https://ashlingnlog.github.io/PacMen/" class="img-responsive" style="width:100%" alt="PacMen">
-        </div>
-    </div>
-  </div>
-</div>
-<br>
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/astruve/30min?primary_color=66d8c6" style="min-width:320px;height:630px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
